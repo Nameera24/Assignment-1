@@ -1,0 +1,40 @@
+void main() {
+  var a_marks = 90;
+  var b_marks=  80;
+  var c_marks = 70;
+  var d_marks = 60;
+  var e_marks = 50;
+  
+  int english = 78;
+  int urdu =  60;
+  int math = 90;
+  int chemistry = 85;
+  int islamiat = 45;
+  
+  int obtained_marks = english + urdu + math + chemistry  + islamiat ;
+  print ("obtained_marks = ${obtained_marks}");
+  int total = 500;
+  double percentage = (( obtained_marks * 100) / total); 
+  print ("Percentage = ${percentage}");
+  
+  if (percentage>=a_marks){
+    print("Your Grade is A-1");
+    
+} 
+  else if(percentage>=b_marks){
+    print("Your Grade is A+");
+  }
+  else if(percentage>=c_marks){
+    print("Your Grade is A");
+    
+  }
+  else if(percentage>=d_marks){
+    print("Your Grade is B");
+  }
+  else if(percentage>=e_marks){
+    print("Your Grade is C");
+    
+  }
+  else {
+    print("You are Failed");
+  }
